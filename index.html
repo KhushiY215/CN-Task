@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Style for the left box */
+    .custom-box {
+      width: 65%; /* 65% of the screen width */
+      height: 92vh; /* 100% of the viewport height */
+      position: fixed;
+      top: 40px;
+      left: 40px;	
+      background-color: #f0f0f0; 
+      border: 1px solid #00000026;
+      border-radius: 20px;
+    }
+    .right-box {
+      width: 20%; /* 30% of the screen width */
+      height: 87vh; /* 100% of the viewport height */
+      position: fixed;
+      top: 40px;
+      right: 0;
+      left: 1090px;
+      background-color: #c7c2c2;
+      /* Set the background color to your preference */
+      border: 20px solid #00000026;
+      border-color: black;
+      border-radius: 35px; 
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    
+    /* Style for the buttons */
+    .button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .button {
+      width: 40%;
+      padding: 10px;
+      background-color: #f7f9fa; /* Set your desired button background color */
+      color: rgb(17, 17, 17); /* Text color for the button */
+      text-align: center;
+      font-size: 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Style for the target element */
+    .target-element {
+      font-size: 21px;
+      margin-left: 20px;
+      padding: 20px 20px;
+    }
+
+    /* Style for the dropdown */
+    .dropdown {
+      margin-left: 40px;
+      width: 90%;
+      padding: 10px 10px;
+      font-size: 15px;
+      border-radius: 5px;
+      border: 1px solid #00000026;
+    }
+
+    /* Style for the tooltip text */
+    .tooltip-text {
+      margin-top: 10px;
+      font-size: 20px;
+      margin-left: 20px;
+      padding: 5px 20px; /* Adjust spacing as needed */
+    }
+
+    /* Style for the input box */
+    .input-box {
+      margin-top: 10px;
+      width: 90%;
+      font-size: 15px;
+      margin-left: 40px;
+      padding: 10px 10px; /* Adjust spacing as needed */
+      background-color: #ffffff; /* Set your desired background color */
+      border: 1px solid #00000026;
+      border-radius: 10px;
+    }
+
+    /* Style for the container div */
+    .container {
+      display: flex;
+      font-size:15px;
+      width: 90%;
+      margin-left: 30px;
+      margin-top: 10px;
+      
+    }
+
+    /* Style for labels within the container */
+    .label {
+      flex: 1;
+      font-size: 20px;
+      padding-right: 10px;
+      padding: 10px 10px;
+      border-radius: 10px;
+
+    }
+
+    /* Style for input boxes within the container */
+    .half-input-box {
+      margin-top: 10px;
+      width: 40%;
+      font-size: 15px;
+      margin-left: 30px;
+      padding: 10px 10px; /* Adjust spacing as needed */
+      background-color: #ffffff; /* Set your desired background color */
+      border: 1px solid #00000026;
+      border-radius: 10px;
+    }
+  </style>
+  
+</head>
+<body>
+
+  <div class="custom-box">
+    <div class="target-element">Target Element</div>
+    <select class="dropdown">
+      <option value="Button 1">Button 1</option>
+      <option value="Button 2">Button 2</option>
+      <option value="Button 3">Button 3</option>
+      <option value="Button 4">Button 4</option>
+      <option value="Button 5">Button 5</option>
+    </select>
+    <div class="tooltip-text">Tooltip Text</div> 
+    <input type="text" class="input-box" placeholder="Input">
+    <div class="container">
+      <div class="label">Text Size</div>
+      <div class="label">Padding</div>
+    </div>
+    <div>
+      <input type="text" class="half-input-box" placeholder="Input"> 
+      <input type="text" class="half-input-box" placeholder="Input">
+    </div>
+    <div class="tooltip-text">Text Color</div>
+    <input type="text" class="input-box" placeholder="Input">
+    <div class="tooltip-text">Background Color</div>
+    <input type="text" class="input-box" placeholder="Input"> 
+    <div class="container">
+      <div class="label">Corner Radius</div>
+      <div class="label">Tooltip Width</div>
+    </div>
+    <div>
+      <input type="text" class="half-input-box" placeholder="Input"> 
+      <input type="text" class="half-input-box" placeholder="Input">
+    </div>
+    <div class="container">
+      <div class="label">Arrow Width</div>
+
+      <div class="label">Arrow Height</div>
+
+    </div>
+    <div>
+      <input type="text" class="half-input-box" placeholder="Input"> 
+      <input type="text" class="half-input-box" placeholder="Input">
+    </div>
+  </div>
+  <!-- Right box with buttons -->
+  <div class="right-box">
+    <div class="button-container">
+      <button class="button">Button 1</button>
+      <button class="button" style="align-self: flex-end;">Button 2</button>
+    </div>
+    <button class="button" style="align-self: center;">Button 3</button>
+    <div class="button-container">
+      <button class="button">Botton 4</button>
+      <button class="button" style="align-self: flex-end;">Botton 5</button>
+    </div>
+    
+  </div>
+</body>
+</html>
+
+
